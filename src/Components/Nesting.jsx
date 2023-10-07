@@ -6,6 +6,7 @@ const Card = styled.div`
   border: 1px solid #ccc;
   padding: 16px;
   margin: 50px 50px 50px 50px;
+  color: pink;
 `;
 
 const RoundedCard = styled(Card)`
