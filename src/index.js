@@ -4,10 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  colors: {
+    primary: '#007bff',
+    secondary: '#ff6600',
+  },
+  fonts: {
+    heading: 'Arial, sans-serif',
+    body: 'Roboto, sans-serif',
+  },
+};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
   </React.StrictMode>
 );
 
